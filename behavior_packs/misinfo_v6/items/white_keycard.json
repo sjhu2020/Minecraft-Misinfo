@@ -1,0 +1,33 @@
+{
+  "format_version":"1.16.100",
+  "minecraft:item":{
+    "description":{
+      "identifier":"misinfo:white_keycard",
+      "category":"items"
+    },
+    "components":{
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "end_game",
+          "target": "self"
+        }
+      },
+      "minecraft:foil": true,
+      "minecraft:icon":{
+         "texture":"white_keycard"
+      },
+      "minecraft:display_name": {
+         "value": "§r§f§lWhite Keycard §r§e[Right Click]"
+      }
+    },
+    "events":{
+      "end_game":{
+        "run_command":{
+          "command":[
+            "function end"
+          ]
+        }
+      }
+    }
+  }
+}

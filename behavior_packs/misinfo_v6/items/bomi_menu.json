@@ -1,0 +1,33 @@
+{
+  "format_version":"1.16.100",
+  "minecraft:item":{
+    "description":{
+      "identifier":"dialog:bomi_menu",
+      "category":"items"
+    },
+    "components":{
+      "minecraft:on_use": {
+        "on_use": {
+          "event": "open_menu",
+          "target": "self"
+        }
+      },
+      "minecraft:foil": true,
+      "minecraft:icon":{
+         "texture":"compass_item"
+      },
+      "minecraft:display_name": {
+         "value": "§r§l§5Call Bomi §r§e§ [Right Click]"
+      }
+    },
+    "events":{
+      "open_menu":{
+        "run_command":{
+          "command":[
+            "function hints"
+          ]
+        }
+      }
+    }
+  }
+}

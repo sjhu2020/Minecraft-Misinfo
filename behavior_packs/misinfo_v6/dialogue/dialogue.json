@@ -1,0 +1,481 @@
+{
+   "format_version": "1.17.20",
+   "minecraft:npc_dialogue": {
+      "scenes": [
+         {
+            "scene_tag": "Intro_1",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Greetings Captain! My name is 3OM-1, but you can call me Bomi! (=^◕ω◕^=) \n",
+            "buttons": [
+               {
+                  "name": "Nice to meet you",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_2"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Intro_2",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "You too! I'll be your virtual companion and help guide you through the abandoned ship. (=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": "Great!",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_3"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Intro_3",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Our friend got sick fighting the space pigs last week, but we have found some kind of research ship that appears to be abandoned. (;=^◕ω◕^=)\n\nWe might be able to find a cure, along with whatever we can salvage! (=^ΦωΦ^=) ",
+            "buttons": [
+               {
+                  "name": "I'm in!",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",				  
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_4"
+                  ]
+               },
+               {
+                  "name": "Wait...",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",				  
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_4"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Intro_4",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Don't worry! We have an official intergalactic salvaging license, it's perfectly legal!  (=^◕◡◕^=)\n\nAnyways, we should probably head to the [Bridge] first, so we can get records of the ship's rsearch and cargo. (=^ΦωΦ^=) \n",
+            "buttons": [
+               {
+                  "name": "Okay...",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",				  
+                     "dialogue open @e[type=npc,c=1] @initiator Intro_5"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Intro_5",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Any questions before we enter the [Landing Bay]? You can also open the compass any time that you need me! (=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "Why are we here?",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",		
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_6"
+                  ]
+               },
+               {
+                  "name": "Nope, let's go!",
+                  "commands": [
+				     "/scoreboard players set @initiator level 1",
+                     "/tp @initiator 390 130 45"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Intro_6",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We're here to get a cure for our friend and maybe some loot! (=^ΦωΦ^=)",
+            "buttons": [
+               {
+                  "name": "Okay",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "/dialogue open @e[type=npc,c=1] @initiator Intro_5"
+                  ]
+               }
+            ]
+         },
+		 {
+            "scene_tag": "Security_0",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Looks like the terminal is protected by security, but no worries, we can crack it! Just give me a moment... (;=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "Great",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+				     "dialogue open @e[type=npc,c=1] @initiator Security_1",
+                     "teleport @p 590 159 28"
+                     
+                  ]
+               }
+            ]
+         },
+		 {
+            "scene_tag": "Security_1",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "And....done, we're in! I've constructed a simulation of the ship's security network! (=^ΦωΦ^=) \n\nIt seems that we'll need to prove that we are human by passing a test before we're allowed to access the terminal... (;=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "How?",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_2"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_2",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Err...well...I'm afraid I can't be of much help for this, but it's asking you to \"Choose the hostile mobs from the Overworld\", wherever that is... ;(=^◕ω◕^=)\n\n",
+            "buttons": [
+               {
+                  "name": "Hostile mobs?",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_3"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_3",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "It's asking about mobs that will always try to attack you, but maybe you know more about this \"Overworld\", that they come from? ;(=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": "I'll try",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_4"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_4",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Fortunately, we can try as many times to complete the test, we just need to get it correct 5 times. However, if we get it wrong we have to start over. Σ(;=^Φ Д Φ^=)\n\nNo pressure! Remember, the prompt is \"Choose the hostile mob from the Overworld\". Good luck! (=^◕◡◕^=)\n\n",
+            "buttons": [
+               {
+                  "name": "Hostile mob?",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_5"
+                  ]
+               },
+               {
+                  "name": "Overworld?",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_6"
+                  ]
+               },
+               {
+                  "name": "[Start the test]",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_5",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Hostile mobs will always try to attack you no matter what. I sure hope we don't run into anything unfriendly like that on the ship... (;=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "Me too",
+                  "commands": [
+				     "/playsound mob.cat.straymeow @initiator",
+                     "dialogue open @e[type=npc,c=1] @initiator Security_4"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_6",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Not sure. I've only heard about the Overworld in stories, but it was once home to a race of ancient builders. But that's just a theory... (=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "Thanks",
+                  "commands": [
+				     "/playsound mob.cat.meow @initiator",	
+                     "dialogue open @e[type=npc,c=1] @initiator Security_4"
+                  ]
+               },
+               {
+                  "name": "A gaaame theory!",
+                  "commands": [
+                     "dialogue open @e[type=npc,c=1] @initiator Security_7"
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Security_7",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "(=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": ":)",
+                  "commands": [
+                     "dialogue open @e[type=npc,c=1] @initiator Security_4"
+                  ]
+               }
+            ]
+         },
+		 {
+            "scene_tag": "Security_Complete_a",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We did it! We cracked the code! Scans indicate the Captain is still somewhere on the ship, but not in any of the rooms we've checked.  The [Captain's Quarters] has more info. (=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": "Let's go!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ],
+			"on_close_commands":[
+                    "/scoreboard players set @p level 7",
+					"/teleport @p 648 130 -64"
+            ]
+         },
+		 {
+            "scene_tag": "Security_Complete_b",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We did it! We cracked the code! Scans indicate the Captain is still somewhere on the ship, but not in any of the rooms we've checked.  The [Captain's Quarters] has more info. (=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": "Already done",
+                  "commands": [
+                     "dialogue open @e[type=npc,c=1] @initiator Security_Complete_b_0"
+                  ]
+               }
+            ],
+			"on_close_commands":[
+                    "/scoreboard players set @p level 8"
+            ]
+         },
+		 {
+            "scene_tag": "Security_Complete_b_0",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Whaaat?! Amazing! Σ(;=^Φ Д Φ^=)\n\nWell then we know the only place could be behind the locked red doors, we need to open them! (=^◕◡◕^=)",
+            "buttons": [
+               {
+                  "name": "More doors...",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ],
+			"on_close_commands":[
+                    "/scoreboard players set @p level 8",
+					"/teleport @p 648 130 -64"
+            ]
+         },
+		 {
+            "scene_tag": "Act_0",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": " Let's try and find our way to the bridge. (=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "To the bridge!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Act_0_Data",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Look, an [Encrypted Data] drive! Exploring the ship is the most important! But we should still look out for some more data. That way, we can find out what happened here! (=^◕ω◕^=)",
+            "buttons": [
+               {
+                  "name": "I'll keep an eye",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Act_0_Electrical",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "To restore the power, we need to navigate through this maze of cables. Remember, if you get lost, just follow the red wire on the ground. (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Thanks Bomi!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Act_1",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We did it! Now that power is restored, we can continue on our search for the bridge! (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "YAY!",
+                  "commands": [
+                    "/scoreboard players set @p level 3",
+					"/teleport @p 504 134 16"
+                  ]
+               }
+            ],
+			"on_close_commands":[
+                    "/scoreboard players set @p level 3",
+					"/teleport @p 504 134 16"
+            ]
+			
+         },
+         {
+            "scene_tag": "Act_1_Bridge",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Darn, we need a [Yellow Keycard] to unlock the [Bridge]. Let's retrace our steps and try to find one. Have we checked the [Crew Quarters] yet? (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Wish me luck!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+		 {
+            "scene_tag": "Act_1_Card",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Great, you found the [Yellow Keycard], now let's get to the bridge and check the computers for information! (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Let's go!",
+                  "commands": [
+                    ""
+                  ]
+               }
+            ],
+			"on_close_commands":[
+			        "/teleport @p[scores={level=!5}] 673 132 9",
+                    "/scoreboard players set @p[scores={level=!5}] level 5"
+
+            ]
+         },
+         {
+            "scene_tag": "Act_1_Quarters",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We need to find the Captain, we should head to the [Captain's Quarter] to get more info, it should be one of the yellow doors. (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Gotcha!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+		 {
+            "scene_tag": "Act_1_Quarters_Log",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "We got the [Captain's Log #2] ! I sure hope nothing bad happened to them! (;=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Nice! Me too...",
+                  "commands": [
+                     "dialogue open @e[type=npc,c=1] @p[scores={level=5}] Act_1_Quarters_Log_a",
+					 "dialogue open @e[type=npc,c=1] @p[scores={level=7..8}] Act_2"
+                  ]
+               }
+            ],
+			"on_close_commands":[
+                    "/scoreboard players set @p[scores={level=7}] level 8"
+            ]
+         },
+		 {
+            "scene_tag": "Act_1_Quarters_Log_a",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Let's go to the [Bridge] and get more info on where the Captain is! (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "On it!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ]
+         },
+         {
+            "scene_tag": "Act_2",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "The Captain must still be on board somewhere, the only places we haven't checked are behind red doors, let's find the [Red Keycard]. (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Let's go!",
+                  "commands": [
+                     ""
+                  ]
+               },
+			   {
+                  "name": "Already done",
+                  "commands": [
+                     "/teleport @p[tag=captain,scores={level=8},tag=security] 804 132 -45",
+					 "/scoreboard players set @p[tag=captain,scores={level=8},tag=security] level 9",
+					 "dialogue open @e[type=npc,c=1] @p[scores={level=9}] Act_3"
+                  ]
+               }
+
+            ]
+         },
+         {
+            "scene_tag": "Act_3",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Only one door left!  We need to find 4 fragments to craft the [White Keycard], and let's keep an eye out for any remaining data! (=^◕ω◕^=)\n",
+            "buttons": [
+               {
+                  "name": "Almost there!",
+                  "commands": [
+                     ""
+                  ]
+               }
+            ],
+			"on_close_commands":[
+					"/teleport @p[tag=captain,scores={level=8}] 804 132 -45",
+					"/scoreboard players set @p[tag=captain,scores={level=8}] level 9"
+            ]
+			
+         },
+		 {
+            "scene_tag": "end",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "Thanks for playing! We hope you had fun and that you'll join us when the game is finished! (=^◕ω◕^=)\n"		
+         },
+		 {
+            "scene_tag": "Red_Card",
+            "npc_name": "30M-1 \"Bomi\"",
+            "text": "You found a [Red Keycard] , that might come in handy later. But now's not the time, we must find more information. (=^◕ω◕^=)\n",
+			"buttons": [
+			   {
+				  "name": "Cool!",
+				  "commands": [
+					 ""
+				  ]
+			   }
+			],
+			"on_close_commands":[
+					"tag @p[tag=!card] add card"
+            ]			
+         }		 
+      ]
+   }
+}
+

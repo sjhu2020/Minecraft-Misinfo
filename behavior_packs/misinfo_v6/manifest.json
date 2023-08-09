@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Misinfo Testing",
+        "description": "",
+        "uuid": "ec7950bf-c006-4cb5-9142-f1d94bdee1cd",
+        "min_engine_version": [1, 18, 0],
+        "version": [1, 0, 4]
+    },
+    "modules": [
+        {
+            "description": "",
+            "type": "data",
+            "uuid": "248a439e-0306-4e2d-b383-0ace96262139",
+            "version": [1, 0, 4]
+        }
+    ]
+}

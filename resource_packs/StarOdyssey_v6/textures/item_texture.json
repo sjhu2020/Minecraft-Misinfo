@@ -1,0 +1,11 @@
+{
+	"resource_pack_name": "Misinfo",
+	"texture_data": {
+		"white_keycard": {
+			"textures": "textures/items/white_keycard"
+		},
+		"white_keycard_fragment": {
+			"textures": "textures/items/white_keycard_fragment"
+		}
+	}
+}
